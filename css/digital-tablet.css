@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #team ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #primary .bi {
+    margin-right: 32px;
+  }
+  #timeline .bi {
+    margin-right: 32px;
+  }
+}

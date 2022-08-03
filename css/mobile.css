@@ -1,0 +1,18 @@
+@media (max-width: 500px) {
+  .taste {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .taste-box i {
+    margin: 0 auto;
+  }
+  #certificate .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .cer-info-2 {
+    border-left: none;
+  }
+}

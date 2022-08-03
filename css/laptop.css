@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Encode Sans", sans-serif;
+  color: #000;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 300;
+}
+/* TẠO BANNER */
+
+header {
+  color: #fff;
+  background-size: cover;
+  position: relative;
+}
+
+#banner {
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+#banner h1 {
+  font-weight: 600;
+  color: #fff;
+}
+
+/* TẠO THANH NAV */
+
+.container a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: inline-block;
+  padding: 0px 12px;
+}
+
+.icon {
+  color: #4c6ef5;
+  padding-left: 12px;
+}
+
+/* TẠO KHỐI ABOUT */
+
+#target {
+  line-height: 1.8;
+}
+
+.section-title {
+  font-weight: 500;
+}
+
+#personal-info {
+  background-color: #f1f3f5;
+  line-height: 1.8;
+}
+
+#personal-info h1 {
+  margin-left: 36px;
+}
+
+.info li {
+  list-style: none;
+}
+.info li:last-child {
+  margin-bottom: 32px;
+}
+
+/* TẠO THÔNG TIN NGHỀ NGHIỆP */
+
+#job-info .box-collumn {
+  border: 4px solid #f1f3f5;
+  margin-bottom: 44px;
+}
+#job-info h2 {
+  font-weight: 500;
+}
+.head-collumn {
+  align-items: center;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding-right: 44px;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  top: 0;
+  bottom: 0;
+  left: 8px;
+  margin-left: -3px;
+}
+.content {
+  padding: 10px 8px 10px 60px;
+  position: relative;
+  width: 100%;
+  color: #868e96;
+  margin-bottom: 44px;
+}
+.content::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #4c6ef5;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  top: 15px;
+  left: 32px;
+}
+.date {
+  display: flex;
+  font-size: 16px;
+  font-style: italic;
+  color: #868e96;
+  margin-bottom: 12px;
+  justify-content: flex-start;
+}
+.present {
+  padding: 6px 10px;
+  background-color: #4c6ef5;
+  border-radius: 10px;
+  color: #fff;
+}
+.title {
+  color: #000;
+  font-weight: 500;
+}
+
+/* SỞ THÍCH */
+
+.taste {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 44px;
+}
+
+.taste-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.taste p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.tt {
+  font-size: 18px;
+  height: 50px;
+  width: 50px;
+  color: #4c6ef5;
+  padding: 13px;
+  border: 1px solid #4c6ef5;
+  border-radius: 50%;
+}
+
+.tt1 {
+  font-size: 18px;
+  height: 50px;
+  width: 50px;
+  color: #4c6ef5;
+  padding: 15px;
+  border: 1px solid #4c6ef5;
+  border-radius: 50%;
+}
+
+/* TẠO KIỂU THANG ĐIỂM */
+.dmark {
+  background-color: #fff;
+}
+
+.dmark span {
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 48px;
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+.mark-eng .m3,
+.mark-jpn .m2,
+.mark-jpn .m3,
+.skill-html .m2,
+.skill-html .m3,
+.skill-java .m3,
+.skill-nodejs .m3,
+.skill-boot .m2,
+.skill-boot .m3 {
+  background: #ced4da;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 48px;
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+
+/* TẠO KIỂU CHỨNG CHỈ-GIẢI THƯỞNG */
+
+#certificate .section-title,
+#project .section-title {
+  margin-left: 15px;
+  margin-bottom: 44px;
+  font-weight: 500;
+}
+.cer-info {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 32px;
+  padding: 18px;
+  gap: 10px;
+  border-bottom: 2px solid #d6c08d;
+}
+
+.cer-info-2 {
+  border-left: 2px solid #d6c08d;
+}
+.cer-img {
+  max-width: 100%;
+}
+
+/* TẠO KHỐI DỰ ÁN */
+
+#project .container {
+  /* margin: 0 auto; */
+  gap: 24px;
+  margin-bottom: 44px;
+}
+.pj-collumn {
+  border: 2px solid #f1f3f5;
+}
+.pj-collumn img {
+  width: 100%;
+  border-bottom: 2px solid #f1f3f5;
+}
+.pj-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 2px solid #f1f3f5;
+  padding: 24px;
+}
+.pj-job {
+  border-bottom: 2px solid #f1f3f5;
+  padding: 22px;
+}
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: 2px solid #f1f3f5;
+  vertical-align: top;
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+/* TẠO KIỂU FOOTER */
+#footer .container {
+  padding: 20px;
+}
+#footer .container ul {
+  text-align: center;
+}
+#footer .container li {
+  font-size: 18px;
+  display: inline-block;
+  gap: 52px;
+  color: #4c6ef5;
+  padding: 8px;
+}
